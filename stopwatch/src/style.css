@@ -54,3 +54,21 @@ body {
 .hidden {
     display: none;
 }
+
+.lap-data-container {
+    height: 15rem;
+    width: 20rem;
+    overflow: auto;
+    margin-top: 4rem;
+}
+
+.lap {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+
+.gap {
+    padding-right: 2rem;
+}
