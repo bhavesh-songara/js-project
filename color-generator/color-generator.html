@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/color-generator.css">
+</head>
+<body>
+    <div class="content">
+        <div class="heading">
+            <h2>BACKGROUND COLOR : <span>#ffffff</span></h2>
+        </div>
+        <input type="button" value="HEX COLOR" id="btn" onclick="hex()">
+        <input type="button" value="HSLA COLOR" id="btn" onclick="hsla()">
+        <input type="button" value="RGBA COLOR" id="btn" onclick="rgba()">
+    </div>
+</body>
+<script>
+    function hex() {
+        let color = Math.random().toString(16).slice(-8);
+        let span = document.querySelector("span");
+        span.textContent = `#${color}`;
+        document.body.style.backgroundColor = `#${color}`
+    }
+    function hsla() {
+        let h = Number(String(Math.random() * 360).slice(0, 3));
+        let s = Number(String(Math.random()).slice(-2));
+        let l = Number(String(Math.random()).slice(-2));
+        let a = Number(String(Math.random()).slice(0, 4));
+        let span = document.querySelector("span");
+        let color = `hsla(${h}, ${s}%, ${l}%, ${a})`;
+        span.textContent = `${color}`;
+        document.body.style.backgroundColor = `${color}`
+    }
+    function rgba() {
+        let h = Number(String(Math.random() * 255).slice(0, 3));
+        let s = Number(String(Math.random() * 255).slice(0, 3));
+        let l = Number(String(Math.random() * 255).slice(0,3));
+        let a = Number(String(Math.random()).slice(0, 4));
+        let span = document.querySelector("span");
+        let color = `rgba(${h}, ${s}, ${l}, ${a})`;
+        span.textContent = `${color}`;
+        document.body.style.backgroundColor = `${color}`
+    }
+</script>
+</html>

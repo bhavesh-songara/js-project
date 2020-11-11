@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#modalBtn {
+    background: coral;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+#modalBtn:hover {
+    background: #333;
+}
+
+#simpleModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name: modal-anim;
+    animation-duration: 2s;
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+     margin: 15% auto; 
+    width: 70%;
+    box-shadow: 0, 5px, 8px, 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: coral;
+    padding: 1rem;
+    color: white;
+}
+
+.modal-header > h2 , .modal-footer > h2{
+    margin: 0;
+}
+
+.modal-body {
+    padding: 10px 20px;
+}
+
+.modal-footer {
+    background-color: coral;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#closeBtn {
+    color: white;
+    float: right;
+    font-size: 2rem;
+}
+
+#closeBtn:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modal-anim  {
+    from{opacity: 0}
+    to{opacity: 1}
+}

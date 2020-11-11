@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="/js-project/style/reset.css">
+    <link rel="stylesheet" href="style/counter.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Counter</h1>
+        <h2>0</h1>
+        <div class="btn-container">
+            <input type="button" value="DECREASE" id="btn" onclick="decrease()">
+        <input type="button" value="RESET" id="btn" onclick="reset()">
+        <input type="button" value="INCREASE" id="btn" onclick="increase()">
+        </div>
+    </div>
+</body>
+<script>
+    function increase() {
+        number = document.querySelector("h2").textContent;
+        number = Number(number) + 1;
+        document.querySelector("h2").textContent = number;
+        if(number > 0) {
+            document.querySelector("h2").style.color = "green";
+        }else if(number < 0) {
+            document.querySelector("h2").style.color = "red";
+        }else {
+            document.querySelector("h2").style.color = "hsl(209, 61%, 16%)"
+        }
+    }
+    function decrease() {
+        number = document.querySelector("h2").textContent;
+        number = Number(number) - 1;
+        document.querySelector("h2").textContent = number;
+        if(number > 0) {
+            document.querySelector("h2").style.color = "green";
+        }else if(number < 0) {
+            document.querySelector("h2").style.color = "red";
+        }else {
+            document.querySelector("h2").style.color = "hsl(209, 61%, 16%)"
+        }
+    }
+    function reset() {
+        document.querySelector("h2").textContent = "0";
+        document.querySelector("h2").style.color = "hsl(209, 61%, 16%)"
+    }
+</script>
+</html>
