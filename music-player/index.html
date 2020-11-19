@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h2>Music Player</h2>
+        </div>
+        <audio src="music/$. Meri Qismat Mein Tu Nahin.mp3" id="audio"></audio>
+        <div class="img-container">
+            <img src="src/index.jpeg" alt="" id="logo">
+        </div>
+
+        <div class="music-status hidden">
+                <h2 class="music-name"></h2>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <img src="src/prev.svg" alt="" id="prev" height="45px" width="45px"> 
+            <img src="src/play.svg" alt="" id="play" height="70px" width="70px">
+            <img src="src/pause.svg" alt="" id="pause" height="70px" width="70px" class="hidden">
+            <img src="src/next.svg" alt="" id="next" height="45px" width="45px">
+        </div>
+    </div>
+</body>
+<script src="src/main.js"></script>
+</html>

@@ -1,0 +1,91 @@
+body {
+  background-image: linear-gradient(
+    0deg,
+    rgba(247, 247, 247, 1) 23.8%,
+    rgba(252, 221, 221, 1) 92%
+  );
+  height: 100vh;
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 100vw;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.img-container {
+  margin-top: 2rem;
+}
+
+.img-container > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.heading > h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.music-status {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-name {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.progress-bar {
+  background-color: #ffffff;
+  height: 10px;
+  width: 20rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.progress {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+
+
+.hidden {
+  display: none;
+}

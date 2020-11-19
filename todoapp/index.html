@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="header">
+        <h3>ToDoApp</h3>
+      </div>
+      <div class="main-content">
+        <div class="filter-class">
+          <p>Add Task</p>
+          <div class="filter-btn">
+            <p>Filter:</p>
+            <button id="allFilterBtn" class="active-btn filter-btn">All</button>
+            <button id="finishFilterBtn" class="filter-btn">Finished</button>
+            <button id="unfinishFilterBtn" class="filter-btn">
+              Unfinished
+            </button>
+          </div>
+        </div>
+        <div class="input-side">
+          <input type="text" name="" id="inputText" placeholder="ADD TASK" />
+          <button id="addTaskBtn">ADD</button>
+        </div>
+      </div>
+      <div class="task-manager"></div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>

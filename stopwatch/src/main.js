@@ -10,6 +10,7 @@ let status = "stop";
 
 let interval = null;
 
+
 function startWatch() {
     document.querySelector("#startBtn").classList.add("hidden");
     document.querySelector("#pauseBtn").classList.remove("hidden");
